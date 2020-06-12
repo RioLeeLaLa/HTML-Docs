@@ -1,11 +1,5 @@
-function my_Dictionary() {
-    var Animal = {
-        Species:"Dog",
-        Color:"Black",
-        Breed:"Labrador",
-        Age:5
-        Sound:"Bark!"
-    };
-    delete Animal.Sound;
-    document.getElementById("Dictionary").innerHTML = Animal.Sound;
-}
+//Type of Operator
+document.write(typeof "Word");
+
+//Output number
+document.write(typeof 3);
