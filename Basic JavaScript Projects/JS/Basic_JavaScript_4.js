@@ -1,5 +1,12 @@
-//Type of Operator
-document.write(typeof "Word");
+//Dictionary
 
-//Output number
-document.write(typeof 3);
+function my_Dictionary() {
+    var Animal = {
+        Species:"Dog",
+        Color:"Black",
+        Breed:"Labrador",
+        Age:5,
+        Sound:"Bark!"
+    };
+    document.getElementById("Dictionary").innerHTML = Animal.Sound;
+}
