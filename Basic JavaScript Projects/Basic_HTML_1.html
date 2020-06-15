@@ -7,12 +7,25 @@
     <script src="JS/Basic_JavaScript_1.js"></script>
 </head>
 <body>
+
     <button onclick="My_First_Function()" id="Green_Text">
         Click Me!
     </button>
 
-    <p id="Concatenate"></p>
-    <p id="Concatenate" onclick = "myFunction()">Click Here!</p>
+    <p>Click here for the letter "h"!</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var str = "Is this all there is?";
+  var patt1 = /[h]/g; 
+  var result = str.match(patt1);
+  document.getElementById("demo").innerHTML = result;
+}
+</script>
 
 </body>
 </html>

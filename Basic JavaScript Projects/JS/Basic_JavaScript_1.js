@@ -9,6 +9,13 @@ function My_First_Function() {
     document.getElementById("Green_Text").innerHTML = result;
 }
 
+document.write("\"Be who you are and say what you feel,"
++ " because those who mind don\'t matter and those who matter dont\'t mind.\""
++ "-Dr. Seuss");
+
+//Window alert
+window.alert("BOOM!");
+
 
 
 

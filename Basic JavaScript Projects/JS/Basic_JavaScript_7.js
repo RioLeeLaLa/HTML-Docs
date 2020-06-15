@@ -12,7 +12,7 @@ function Age_Function() {
         Vote = "You are old enough to vote!";
     }
     else {
-        Vote = "You are old enough to vote!";
+        Vote = "You are not old enough to vote!";
     
     
 }
