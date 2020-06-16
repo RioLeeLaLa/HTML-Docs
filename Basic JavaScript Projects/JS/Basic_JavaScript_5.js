@@ -11,3 +11,7 @@ document.write(A===B);
 function not_Function () {
     document.getElementById("Not").innerHTML = ! (20 > 10);
 }
+
+document.write(5 > 2 && 10 > 4);
+
+document.write(5 > 10 || 10 >20);
