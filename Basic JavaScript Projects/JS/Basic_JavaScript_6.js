@@ -19,8 +19,7 @@ function getFee(isMember) {
   console.log(getFee(1));
   // expected output: "$2.00"
 
-
-  //I cannot get this section to work. How is it supposed to look when performing correctly?
+  
 function Vehicle(Make, Model, Year, Color) {
     this.Vehicle_Make = Make;
     this.Vehicle_Model = Model;
@@ -36,12 +35,11 @@ function myFunction() {
     " manufactured in " + Erik.Vehicle_Year;
 }
 
-//Also cannot get this section to work
 function count_Function() {
     document.getElementById("Counting").innerHTML = Count ();
     function Count() {
         var Starting_point = 9;
-        function Plus_one() (Starting_point += 1;)
+        function Plus_one() {Starting_point += 1;}
         Plus_one();
         return Starting_point;
     }
