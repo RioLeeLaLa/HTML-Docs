@@ -30,7 +30,7 @@ var Jack = new Vehicle("Dodge", "Viper", 2020, "Red");
 var Emily = new Vehicle("Jeep", "Trail Hawk", 2019, "White and Black");
 var Erik = new Vehicle("Ford", "Pinto", 1971, "Mustard");
 function myFunction() {
-    document.getElementById("New_and_This").innerHTML =
+    document.getElementById("Keywords_and_Constructors").innerHTML =
     "Erik drives a " + Erik.Vehicle_Color + "-colored " + Erik.Vehicle_Model +
     " manufactured in " + Erik.Vehicle_Year;
 }
@@ -43,6 +43,12 @@ function count_Function() {
         Plus_one();
         return Starting_point;
     }
+}
+
+function New_and_This() {
+    var str = "I am looking for a blue car";
+    var result = str.fontcolor("blue");
+    document.getElementById("New_and_This").innerHTML = result;
 }
 
 
