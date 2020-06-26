@@ -14,7 +14,7 @@ document.write("\"Be who you are and say what you feel,"
 + "-Dr. Seuss");
 
 //Window alert
-window.alert("BOOM!");
+window.alert("Danger, Will Robinson!");
 
 
 
