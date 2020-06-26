@@ -128,7 +128,7 @@ function arrayIncludes(squareA, squareB, squareC) {
 }
 
 //This function utilizes html canvas to draw win line 
-function drawWinLine (coordX1, coordY1, coordX2, coordY2) {
+function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
     //This line accesses our html canvas element
     const canvas = document.getElementById('win-lines') ;
     //This line gives us access to methods and properties to use on canvas
@@ -152,7 +152,7 @@ function drawWinLine (coordX1, coordY1, coordX2, coordY2) {
         //This method clear, s content from last lopp interation
         c.clearRect(0, 0,  608, 608);
         //This method starts a new path
-        c.beginPath()
+        c.beginPath();
         //This method moves us to a starting point for our line
         c.moveTo(x1,  y1);
         //This method indicates the end point for our line
@@ -160,7 +160,7 @@ function drawWinLine (coordX1, coordY1, coordX2, coordY2) {
         //This method sets the with of our line
         c.lineWidth = 10;
         //This method sets the color of our line
-        c.strokeStyle = 'rgba (70, 225, 33, .8)';
+        c.strokeStyle = 'rgba (70, 255, 33, .8)';
         //This method draws everything we laid out above
         c.stroke();
         //This condition checks if we've reached the endpoint
@@ -177,7 +177,7 @@ function drawWinLine (coordX1, coordY1, coordX2, coordY2) {
         if (xl <= x2 && yl >= y2) {
             if (x < x2) { x += 10; }
             if (y > y2) { y -= 10; }
-            if (x >= x2 && y <= y2) { webkitCancelAnimationFrame(animatioLoop); }
+            if (x >= x2 && y <= y2) { webkitCancelAnimationFrame(animationLoop); }
         }
     }
     //This function clears our canvas after our win line is drawn
@@ -187,7 +187,7 @@ function drawWinLine (coordX1, coordY1, coordX2, coordY2) {
         //This line clears our canvas
         c.clearRect(0, 0, 608, 608);
         //This line stops our animation loop
-        webkitCancelAnimationFrame(animationLoop);
+        CancelAnimationFrame(animationLoop);
     }
     //This line disallows clicking while the win sound is playing
     disableClick();
