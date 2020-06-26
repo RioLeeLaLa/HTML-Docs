@@ -214,3 +214,17 @@ function resetGame() {
     selectedSquares = [];
 }
 
+//This funtion makes our body element temporarily unclickable
+function disableClick() {
+    //this makes our body unclickable
+    body.style.pointerEvents = 'none';
+    //This makes our body clickable again after 1 second
+    setTimeout (function() {body.style.pointerEvents = 'auto';}, 1000);
+}
+
+//This function takes a string parameter of the path you set earlier for
+//placement sound
+function audio (audioURL) {
+    let audio = new Audio(audioURL);
+    audio.play();
+}
