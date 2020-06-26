@@ -17,3 +17,9 @@ function firstFunction() {
     var result = str.fontcolor("green");
     document.getElementById("Green_Text").innerHTML = result;
 }
+
+function myFunction() {
+    var sentence = "I am learning";
+    sentence += " coding";
+    document.getElementById("Concatenate").innerHTML = sentence;
+}
