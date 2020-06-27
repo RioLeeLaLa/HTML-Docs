@@ -187,7 +187,7 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
         //This line clears our canvas
         c.clearRect(0, 0, 608, 608);
         //This line stops our animation loop
-        CancelAnimationFrame(animationLoop);
+        cancelAnimationFrame(animationLoop);
     }
     //This line disallows clicking while the win sound is playing
     disableClick();
